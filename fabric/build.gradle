@@ -74,13 +74,17 @@ publishing {
             groupId project.group
             artifactId project.archivesBaseName
             version project.version
-            from components.java
+            artifact jar
         }
     }
-
     repositories {
         maven {
-            url "file://" + System.getenv("local_maven")
+            name = "GithubPackages"
+            url = "https://maven.pkg.github.com/NewWind-Modpacks/radiantgear"
+            credentials {
+                username = System.getenv("GITHUB_ACTOR")
+                password = System.getenv("GITHUB_TOKEN")
+            }
         }
     }
 }

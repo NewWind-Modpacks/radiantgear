@@ -2,6 +2,11 @@
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg?&style=flat-square)](https://www.gnu.org/licenses/lgpl-3.0)
 [![ko-fi](https://img.shields.io/badge/Support%20Me-Ko--fi-%23FF5E5B?style=flat-square)](https://ko-fi.com/C0C1NL4O)
 
+> [!WARNING]
+> This repository is a fork of [Illusive Soulworks' Radiant Gear](https://github.com/illusivesoulworks/radiantgear).
+> It has been modified by the [New Wind Modpacks Team](https://github.com/NewWind-Modpacks) to allow for it being depended upon through Maven.
+> This repo purely implements a CI Workflow that publishes commits as Maven Packages to the Github Maven Package Repository.
+
 Radiant Gear is a mod that acts as a simple compatibility bridge between [Curios API](https://www.curseforge.com/minecraft/mc-mods/curios)
 or [Trinkets API](https://www.curseforge.com/minecraft/mc-mods/trinkets) and dynamic light mods. With this mod, items in
 accessory slots will inherit the dynamic lighting behavior defined by the dynamic lighting mod. As an example, if a held
