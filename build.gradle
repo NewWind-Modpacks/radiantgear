@@ -5,6 +5,8 @@ subprojects {
     java.toolchain.languageVersion = JavaLanguageVersion.of(17)
     java.withSourcesJar()
     java.withJavadocJar()
+
+    version = System.getenv("GITHUB_HASH") ?: project.version
         
     jar {
         from(rootProject.file("LICENSE"))
